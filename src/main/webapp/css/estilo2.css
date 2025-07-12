@@ -1,0 +1,413 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color-scheme: light ;
+}
+
+
+body{
+	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.64)) ,url(../imagenHtml/videojuegos_1920x1080.jpg);
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+	background-attachment: fixed;
+    
+}
+
+.superior{
+	background-image: linear-gradient(to right, #6010a8,rgb(75, 26, 165) , #10835d);
+    width: 100%;
+	height: 85px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-family: 'Open Sans';
+	
+	/* barra del buscador*/
+	.search {
+    display: flex;
+    align-items: center;
+    border: 2px #480c7c solid;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 550px; /* Ajusta el ancho según tu diseño */
+    position: relative;
+    background-color: white;
+	}
+
+	.search img {
+	    width: 25px;
+	    height: 25px;
+	    margin-left: 10px; /* Espaciado a la izquierda */
+	}
+	
+	.search input {
+	    border: none; /* Elimina el borde del input */
+	    padding: 10px 15px;
+	    flex: 1; /* Hace que el input ocupe el espacio restante */
+	    outline: none; /* Elimina el contorno al hacer clic */
+	    font-size: 16px;
+	    border-radius: 0; /* Asegura que no sobresalga del contenedor */
+	}
+
+
+	/*logo*/
+	.logo-container{
+		display: flex;
+	}
+	.default-spacer{
+		width: 100px;
+	}
+	.Logo{
+		text-align: center;
+		display: flex;
+		align-items: center;
+		img{
+			width: 150px;
+			height: 75px;
+		}
+		
+	}
+	/*barra de navegacion*/
+	nav{
+		max-width: 100%;
+		margin: 14px 80px;
+		background-image: radial-gradient(to right, #6010a8,rgb(75, 26, 165) , #10835d);
+		font-size: 15pt;
+		text-align: center;
+		
+		.menu-horizontal{
+			list-style: none;
+			display: flex;
+			justify-content: space-around;
+		}
+		.menu-horizontal > li > a{
+			display: block;
+			padding: 15px 20px;
+			color: white;
+			text-decoration: none;
+		}
+		.menu-horizontal > li:hover{
+			background-color: rgb(4, 163, 102);
+		}
+		.menu-vertical{
+			position: absolute;
+			display: none;
+			list-style: none;
+			width: 200px;
+			background-color: rgba(82, 25, 173, 0.5);
+		}
+		.menu-horizontal li:hover .menu-vertical{
+			display: block;
+		}
+		.menu-vertical li:hover{
+			background-color: rgb(100, 4, 129);
+		}
+		
+		.menu-vertical li a{
+			display: block;
+			color: white;
+			text-decoration: none;
+			padding: 15px 15px 15px 20px;
+		}
+	}
+}
+
+ 
+
+#html{
+	margin: 100%;
+	padding: 20px;
+	max-width: 900px;
+	background: white;
+}
+		.car {
+	    position: relative;
+	    margin-right: 300px; /* Ajusta según sea necesario */
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    text-decoration: none;
+	    
+	}
+	
+	.car i {
+	    color: white;
+	    font-size: 25px;
+	    transition: color 0.3s ease;
+	}
+	
+	.car i:hover {
+	    color: #6e0ead;
+	}
+	
+	.cuenta-carrito {
+	    position: absolute;
+	    top: 0; /* Ajusta la posición vertical */
+	    right: 0; /* Ajusta la posición horizontal */
+	    transform: translate(50%, -50%); /* Centrado relativo */
+	    background-color: red;
+	    color: white;
+	    font-size: 12px;
+	    width: 20px;
+	    height: 20px;
+	    border-radius: 50%;
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	}
+	
+
+/*Seccion*/
+main{
+	font-family: 'Open Sans';
+	.seccion1{
+		background-image:  linear-gradient(to right, rgb(34, 33, 33, 0.55), black,rgb(34, 33, 33,0.55));
+		width: 100%;
+		color: rgb(207, 199, 199);
+		padding: 40px;
+		display: flex;
+		text-align: center;
+		justify-content: center;
+		gap: 3em;
+		
+		span{
+			width: 400px;
+		}
+		h1{
+			font-size: 45pt;
+			padding: 9px;
+			text-align: center;
+		}
+		p{
+			font-size: 18pt;
+			strong{
+				color: #0af706;
+			}
+		}
+		img{
+			width: 400px;
+			
+		}
+	}
+	/*subtitulo*/
+	h2{
+		text-align: center;
+		color: rgb(211, 248, 246);
+		font-family: Georgia;
+		padding: 45px;
+		font-size: 34pt;
+		transition: font-size 300ms linear 0.5s;
+	}
+	h2:hover{
+		font-size: 45pt;
+	}
+	/*sección 2*/
+	.seccion2{
+		padding: 10px;
+		margin: 10px 100px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		overflow: 0;
+		
+		figure{
+			background-image: linear-gradient(to right,rgb(168, 166, 166), white, rgb(168, 166, 166));
+			width: 408px;
+			transition: all 800ms ease-in-out;
+			transition-duration: 1s;
+			flex-shrink: 0;
+			
+			a{
+				text-decoration: none;
+				color: black;
+				
+			}
+			h3{
+				text-align: center;
+				padding: 1px 15px;
+			}
+			figcaption{
+				text-align: center;
+				padding: 8px 13px;
+			}
+			img{
+				height: 500px;
+				width: 100%;
+			}
+		}
+		figure:hover{
+			transform: scale(1.21,1.21);
+		}
+	}
+	
+	.seccion3{
+		padding: 10px;
+		margin: 10px 100px;
+		display: flex;
+		flex-direction: row;
+		gap: 3em;
+		flex-wrap: wrap;
+		justify-content: center;
+		color: black;
+
+		/*comentario de la comunidad*/
+		 .comentario-carta{
+			justify-content: space-evenly;
+			background-color: rgb(220, 237, 253);
+			width: 40%;
+			height: 287px;
+			display: flex;
+
+			/*logo y nombre del juego*/
+			figure{
+				background-color: black;
+				width: 30%; 
+				img{
+					width: 100%;
+					height: 250px;
+				}
+				figcaption{
+					font-size: 15pt;
+					text-align: center;
+					padding-bottom: 9px;
+					font-family: "Mulish", sans-serif;
+					color: aliceblue;
+				}
+			}
+			.comentario{
+			   flex-direction: column;
+			   padding: 20px 8px;
+			   width: 80%;
+			   p{
+				   text-align: justify;
+				   padding: 20px 35px;
+				   font-size: 15pt;
+			   }
+			   .usuario{
+					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
+					align-items: center;
+					padding: 10px 35px;
+				   .name{
+					   display: flex;
+					   flex-direction: row;
+					   align-items: center;
+					   gap: 1em;
+					   width: 62%;
+					   img{
+						   border-radius: 50%;
+						   width: 50px;
+						   height: 47px;
+					   }
+					   h3{
+						   font-family: monospace;
+						   font-size: 9pt;
+					   }
+				   }
+			   }
+			}
+		 }
+	}
+
+}
+
+ /*Estilos de pie de pagina*/ 
+footer{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-image: linear-gradient(to right, #6010a8,rgb(75, 26, 165) , #10835d);
+        padding-top: 50px;
+        color: white;
+        
+        .container{
+            width: 1140px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+        }
+        .footer-content{
+            width: 33.3%;
+        }
+        h3{
+            font-size: 28px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        .footer-content p{
+            width:190px;
+            margin: auto;
+            padding: 7px;
+        }
+        .footer-content ul{
+            text-align: center;
+        }
+        .list{
+            padding: 0;
+        }
+        .list li{
+            width: auto;
+            text-align: center;
+            list-style-type:none;
+            padding: 7px;
+            position: relative;
+        }
+        .list li::before{
+            content: '';
+            position: absolute;
+            transform: translate(-50%,-50%);
+            left: 50%;
+            top: 100%;
+            width: 0;
+            height: 2px;
+            background:#fcae6a;
+            transition-duration: .5s;
+        }
+        .list li:hover::before{
+            width: 70px;
+        }
+        .social-icons{
+            text-align: center;
+            padding: 0;
+        }
+        .social-icons li{
+            display: inline-block;
+            text-align: center;
+            padding: 5px;
+        }
+        .social-icons i{
+            color: white;
+            font-size: 25px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        a:hover{
+            color: #fcae6a;
+        }
+        .social-icons i:hover{
+            color: #fcae6a;
+        }
+
+       
+        .bottom-bar{
+            background: #f8b702;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 50px;
+            p{
+               color: #343434;
+               margin: 0;
+               font-size: 16px;
+               padding: 7px;
+           }
+        }
+    }
+

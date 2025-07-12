@@ -1,0 +1,371 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans';
+	color-scheme: light ;
+}
+
+
+body{
+	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.64)) ,url(../imagenHtml/videojuegos_1920x1080.jpg);
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.superior{
+	background-image: linear-gradient(to right, #6010a8,rgb(75, 26, 165) , #10835d);
+    width: 100%;
+	height: 85px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-family: 'Open Sans';
+	
+	/* barra del buscador*/
+	.search {
+    display: flex;
+    align-items: center;
+    border: 2px #480c7c solid;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 550px; /* Ajusta el ancho según tu diseño */
+    position: relative;
+    background-color: white;
+	}
+
+	.search img {
+	    width: 25px;
+	    height: 25px;
+	    margin-left: 10px; /* Espaciado a la izquierda */
+	}
+	
+	.search input {
+	    border: none; /* Elimina el borde del input */
+	    padding: 10px 15px;
+	    flex: 1; /* Hace que el input ocupe el espacio restante */
+	    outline: none; /* Elimina el contorno al hacer clic */
+	    font-size: 16px;
+	    border-radius: 0; /* Asegura que no sobresalga del contenedor */
+	}
+
+
+	/*logo*/
+	.logo-container{
+		display: flex;
+	}
+	.default-spacer{
+		width: 100px;
+	}
+	.Logo{
+		text-align: center;
+		display: flex;
+		align-items: center;
+		img{
+			width: 150px;
+			height: 75px;
+		}
+		
+	}
+	/*barra de navegacion*/
+	nav{
+		max-width: 100%;
+		margin: 14px 80px;
+		background-image: radial-gradient(to right, #6010a8,rgb(75, 26, 165) , #10835d);
+		font-size: 15pt;
+		text-align: center;
+		
+		.menu-horizontal{
+			list-style: none;
+			display: flex;
+			justify-content: space-around;
+		}
+		.menu-horizontal > li > a{
+			display: block;
+			padding: 15px 20px;
+			color: white;
+			text-decoration: none;
+		}
+		.menu-horizontal > li:hover{
+			background-color: rgb(4, 163, 102);
+		}
+		.menu-vertical{
+			position: absolute;
+			display: none;
+			list-style: none;
+			width: 200px;
+			background-color: rgba(82, 25, 173, 0.5);
+		}
+		.menu-horizontal li:hover .menu-vertical{
+			display: block;
+		}
+		.menu-vertical li:hover{
+			background-color: rgb(100, 4, 129);
+		}
+		
+		.menu-vertical li a{
+			display: block;
+			color: white;
+			text-decoration: none;
+			padding: 15px 15px 15px 20px;
+		}
+	}
+}
+
+ 
+
+#html{
+	margin: 100%;
+	padding: 20px;
+	max-width: 900px;
+	background: white;
+}
+		.car {
+	    position: relative;
+	    margin-right: 300px; /* Ajusta según sea necesario */
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    text-decoration: none;
+	    
+	}
+	
+	.car i {
+	    color: white;
+	    font-size: 25px;
+	    transition: color 0.3s ease;
+	}
+	
+	.car i:hover {
+	    color: #6e0ead;
+	}
+	
+	.cuenta-carrito {
+	    position: absolute;
+	    top: 0; /* Ajusta la posición vertical */
+	    right: 0; /* Ajusta la posición horizontal */
+	    transform: translate(50%, -50%); /* Centrado relativo */
+	    background-color: red;
+	    color: white;
+	    font-size: 12px;
+	    width: 20px;
+	    height: 20px;
+	    border-radius: 50%;
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	}
+	
+	
+ 
+    .logo-lol{
+	width: 800px;
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+}
+
+h2{
+	text-align: center;
+
+}
+html{
+	width: 100%;
+	height: 100%;
+}
+main{
+	display: flex;
+	background-image:  linear-gradient(to right, rgba(22, 180, 93, 0.5), rgb(0, 0, 0,0.55),rgba(0, 0, 0, 1.5));
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	color: rgb(207, 199, 199);
+	padding: 50px 20px 50px ;
+	.seccion-dota{
+		padding: 40px;
+		display: block;
+		h2{
+			font-size: 20pt;
+			text-decoration: underline;
+		}
+		h3{
+			font-size: 18pt;
+			text-decoration: underline;
+			padding-bottom: 10px;
+		}
+		p{
+			font-size: 15pt;
+			text-align: justify;
+		}
+		.text-dota{
+			padding-top: 10px;
+			p{
+				font-size: 15pt;
+				text-align: justify;
+			}
+			img{
+				width: 500px;
+				float: right;
+				margin-left: 10px;
+			}
+		}
+		img{
+			width: 500px;
+			float: left;
+			padding-right: 10px;
+			padding-top: 15px;
+		}
+	}
+	.aside-right{
+		padding: 15px 0px 15px 20px;
+		width: 80%;
+		border-left: 1px solid white;
+		text-align: center;
+		h3{
+			padding-bottom: 15px;
+			text-decoration-line: underline;
+			font-size: 25pt;
+			text-align: center;
+		}
+		img{
+			width: 280px;
+		}
+		p{
+			text-align: justify;
+		}
+		video{
+			width: 280px;
+		}
+	}
+	.aside-left{
+		padding: 15px 20px 15px 20px;
+		width: 80%;
+		border-right: 1px solid white;
+		text-align: center;
+		h3{
+			padding-bottom: 15px;
+			text-decoration-line: underline;
+			font-size: 25pt;
+			text-align: center;
+		}
+		a img{
+			padding-top: 10px;
+			width: 100px;
+			transition: all 800ms ease-in-out;
+			transition-duration: 1s;
+		}
+		a img:hover{
+			transform: scale(1.21,1.21);
+		}
+		p{
+			text-align: justify;
+		}
+		video{
+			padding-top: 10px;
+			width: 280px;
+		}
+	}
+
+}
+
+
+/*Estilos de pie de pagina*/ 
+footer{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-image: linear-gradient(to right, #6010a8,rgb(75, 26, 165) , #10835d);
+        padding-top: 50px;
+        color: white;
+        
+        .container{
+            width: 1140px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+        }
+        .footer-content{
+            width: 33.3%;
+        }
+        h3{
+            font-size: 28px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        .footer-content p{
+            width:190px;
+            margin: auto;
+            padding: 7px;
+        }
+        .footer-content ul{
+            text-align: center;
+        }
+        .list{
+            padding: 0;
+        }
+        .list li{
+            width: auto;
+            text-align: center;
+            list-style-type:none;
+            padding: 7px;
+            position: relative;
+        }
+        .list li::before{
+            content: '';
+            position: absolute;
+            transform: translate(-50%,-50%);
+            left: 50%;
+            top: 100%;
+            width: 0;
+            height: 2px;
+            background:#fcae6a;
+            transition-duration: .5s;
+        }
+        .list li:hover::before{
+            width: 70px;
+        }
+        .social-icons{
+            text-align: center;
+            padding: 0;
+        }
+        .social-icons li{
+            display: inline-block;
+            text-align: center;
+            padding: 5px;
+        }
+        .social-icons i{
+            color: white;
+            font-size: 25px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        a:hover{
+            color: #fcae6a;
+        }
+        .social-icons i:hover{
+            color: #fcae6a;
+        }
+
+       
+        .bottom-bar{
+            background: #f8b702;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 50px;
+            p{
+               color: #343434;
+               margin: 0;
+               font-size: 16px;
+               padding: 7px;
+           }
+        }
+    }
+    
+   
+
